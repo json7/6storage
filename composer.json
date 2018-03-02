@@ -1,0 +1,20 @@
+{
+    "name": "json7/storage",
+    "description": "公司内部存储调用客户端",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "6.2-dev"
+    },
+    "license": "apache",
+    "authors": [
+        {
+            "name": "json",
+            "email": "json7@foxmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "json7\\storage\\": "src/"
+        }
+    },
+}
