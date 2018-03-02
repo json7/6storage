@@ -16,5 +16,6 @@
         "psr-4": {
             "json7\\storage\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev",
 }
