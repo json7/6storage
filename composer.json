@@ -17,5 +17,5 @@
             "json7\\storage\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "1.0"
 }
