@@ -16,17 +16,12 @@ class StorageServiceProvider extends ServiceProvider {
 
     public function boot()
     {
-        Storage::extend('storage', function($app, $config)
+        Storage::extend('Storage6', function($app, $config)
         {
-            $accessId  = $config['access_id'];
-            $accessKey = $config['access_key'];
-            $adapter = new StorageAdapter();
-            //Log::debug($client);
+            $accesskey  = $config['key'];
+            $accessapi  = $config['api'];
+            $adapter = new StorageAdapter($accessapi, $accesskey);
             $filesystem =  new Filesystem($adapter);
-
-            $filesystem->addPlugin(new PutFile());
-            $filesystem->addPlugin(new PutRemoteFile());
-            //$filesystem->addPlugin(new CallBack());
             return $filesystem;
         });
     }
